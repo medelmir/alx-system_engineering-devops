@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
 #script that displays the content of the file /etc/passwd.
 
-cut -d: -f1,3,6 /etc/passwd
+
+i=1
+while [ "$i" -eq "1" ] ; do
+    cut -d: -f1,3,6 /etc/passwd
+    ((i++))
+done
