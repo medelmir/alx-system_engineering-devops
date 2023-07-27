@@ -2,18 +2,14 @@
 # display hours from 0 to 12 , minutes from 1 to 59
 
 i=0
-while [ $i -le 60 ] ; do
-    if [ "$i" -eq "0" ] ; then
-        echo "Hour: 0"
-    elif [ "$i" -eq "60" ] ; then
-        echo "Hour: 1"
-        z=1
-        while [ "$z" -le "12" ] ; do
-            echo "$z"
-            ((z++))
-        done
-    else
-        echo "$i"
-    fi
+z=0
+while [ "$i" -le "12" ] ; do
+    echo "Hour: $z"
+    n=1
+    while [ "$n" -le "59" ] ; do
+        echo "$n"
+        ((n++))
+    done
+    ((z++))
     ((i++))
 done
