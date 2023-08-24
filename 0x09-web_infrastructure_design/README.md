@@ -15,4 +15,4 @@ High availability cluster (active-active/active-passive)
 What is HTTPS
 What is a firewall
 ### Web infrastructure
-![Watch the video](https://youtu.be/lQNEW76KdYg)
+![](https://youtu.be/lQNEW76KdYg)
